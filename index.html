@@ -42,10 +42,22 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sabor Colombiano</a>
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-light btn-sm" onclick="window.location.href = backendUrl + '/login/'">Iniciar sesión</button>
+                <button class="btn btn-outline-light btn-sm" onclick="window.location.href = backendUrl + '/registro/'">Registrarse</button>
+                <button class="btn btn-primary btn-sm" onclick="window.location.href = backendUrl + '/pedidos/carrito/'">Carrito</button>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="header">
             <h1 class="display-4 text-primary"><i class="fas fa-utensils"></i> Restaurante Sabor Colombiano</h1>
             <p class="lead">Descubre nuestros deliciosos platos tradicionales</p>
+            <p class="text-muted">Para registrarte, iniciar sesión y completar pedidos, usa los enlaces arriba.</p>
         </div>
 
         <div id="categorias" class="row">
